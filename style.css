@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* to set the content to the center vertically 
+        - we need to set the height of the screen 
+    */
+    height: 100vh;
+    justify-content: center;
+
+    /*
+    - go to unsplash site to get a background photo URL 
+    - then set a background
+    */
+    background: url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80");
+
+    background-size: cover;
+
+    /* Adding overflow hidden to remove any scrolling appear when 
+    we decrise the width of the page  */
+
+    overflow: hidden;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+
+.clock {
+    display: flex;
+}
+
+.clock div {
+    margin: 5px;
+    position: relative;
+
+}
+
+.clock span {
+    height: 80px;
+    width: 100px;
+    display: flex;
+    background-color: saddlebrown;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    color: white;
+    font-size: 50px;
+}
+
+.clock .text {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    height: 30px;
+    background-color: seagreen;
+    opacity: 0.8;
+}
+
+.clock #ampm {
+    position: absolute;
+    bottom: 0%;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    background-color: darkcyan;
+}
